@@ -1,22 +1,78 @@
 {
-    "1" : [],
-    "2" : [],
-    "3" : [],
-    "4" : [],
-    "5" : [   
-        "This week I gotta work on designing key visuals for the art event brief based on the concepts from the research phase. Because last week, I had to leave for the career fair event so I have to make up for it. I proposed a few KVs and prepare the materials for Randy to present to the clients"
-        ,
-        "Through designing these KVs, I learned a lot on how the designs get to be presented to the clients. And how they get to be selected by my director. I got to learn some fun strategies to generate ideas like recycling some old tropes in Singapore or another more textual approach, using anagrams, wordplay to create some odd, quirky, funny interactions for viewers."
-        ,
-        "I have to work along with 2 other designers. There are a few key takeaways I get out of this teamwork. I realise that communication design in Singapore is obsessed and centered around typefaces. Designers take typography as the main source of power, which is certainly not the area that I excel at. My strength lies much more in the visualization side than making text and paragraphs legible and functional. Therefore, I got much more to learn and practice esp typography."
-        ,
-        "This week, nothing much happened around except for the fact that all the interns (including me) formed a gang to eat lunch in the pantry room everyday, since everyone else ate out."
-    ],
-    "6" : [],
-    "7" : [],
-    "8" : [],
-    "9" : [],
-    "10" : [],
-    "11" : [],
-    "12" : []
+    "1" : {
+        "ct" : [],
+        "mxvd" : 16 
+    },
+    "2" : {
+        "ct" : [],
+        "mxvd" : 10 
+    },
+    "3" : {
+        "ct" : [],
+        "mxvd" : 17 
+    },
+    "4" : {
+        "ct" : [],
+        "mxvd" : 12 
+    },
+    "5" : {
+        "ct" : [   
+            "This week I gotta work on designing key visuals for the art event brief based on the concepts from the research phase. Because last week, I had to leave for the career fair event so I have to make up for it. I proposed a few KVs and prepare the materials for Randy to present to the clients"
+            ,
+            "Through designing these KVs, I learned a lot on how the designs get to be presented to the clients. And how they get to be selected by my director. I got to learn some fun strategies to generate ideas like recycling some old tropes in Singapore or another more textual approach, using anagrams, wordplay to create some odd, quirky, funny interactions for viewers."
+            ,
+            "I have to work along with 2 other designers. There are a few key takeaways I get out of this teamwork. I realise that communication design in Singapore is obsessed and centered around typefaces. Designers take typography as the main source of power, which is certainly not the area that I excel at. My strength lies much more in the visualization side than making text and paragraphs legible and functional. Therefore, I got much more to learn and practice esp typography."
+            ,
+            "This week, nothing much happened around except for the fact that all the interns (including me) formed a gang to eat lunch in the pantry room everyday, since everyone else ate out."
+        ],
+        "mxvd" : 9
+    },
+    "6" : {
+        "ct" : [
+            "This week, I continued on the art event identity brief. After the presentation with clients last week, I finally knew which direction is locked down. Therefore, What I had to do this week is to create visual iterations for it, dig deeper into the concepts behind, finding ways on how that direction can develop and adapt throughout a variety of touchpoints and precincts."
+            ,
+            "I have learned that PT is following a proposal-based process for each brief, in which the studio will have several presentations and get feedback or selection for each round. This process minimizes the time we have to meet with the clients, inevitably entailing preconceptions and miscommunication between the 2; however, maximizes the efficiency and profits to sustain the studio."
+            ,
+            "My best practice at work is to try different approaches to the execution of an idea. For example, by messing around with a variety of tools, I can see how moving graphic ideas play out in different perspectives such as variable font or website motion."
+            ,
+            "Furthermore, at PT, there is a really helpful practice that is timing yourself for each task and updating it to the timestamp of Hive (a project management platform used at the studio)."
+            ,
+            "Therefore, each assignment is kept track and measured by time units, which can be calculated to the overall productivity of one. However, to best take advantage of this scientific method, one has to take their time budget seriously and allocate workload efficiently."
+        ],
+        "mxvd" : 0
+    },
+    "7" : {
+        "ct" : [
+            "This week I continued the art event brief, which I had to elevate the original direction with a better execution. Therefore, I had to focus on making design variations that fit better with the general audience view since there is not much time left for experiments and playground. I had to resort to what would attract regular people’s eyes so as to satisfy clients’ intention."
+            ,
+            "On the other hand, trying not to overcomplicate is also challenging since I often had the habit of building up on something so much that it gradually concealed the essence, the core idea that made it interesting in the first place. At the end of the day, the team will all come together to leave out all the extensions and unnecessary details, embracing the original intention of the idea and its key qualities."
+            ,
+            "Making anything into modules can greatly save efforts and time to do tasks that are repetitive and structural. I learned that every software has its own purpose, that is to make things faster and of higher precision by breaking down the workflow into small functions that can be reused, combined, and automated. Design software functions the same way and we should incorporate that thinking into how we work."
+            ,
+            "Working amongst the machines nowadays, designers’ role is to instruct the softwares to design on our behalf or finding ways to exploit their computational capabilities so that we, creative person, can spend the rest of the day mediating, reflecting and wandering into the realm of ideas. I felt like the usage of dividing a big task into small segments can help us manage the task better."
+            ,
+            "As far as I can see, one of the weaknesses I observe at my workplace is the feeling of isolation. Even though I worked here for quite a short time, there’s still a distanced gap between me and other workers and I can also see that among those working here. Maybe it’s just because of my quite passive and introverted personality that I do not really talk much to others."
+        ],
+        "mxvd" : 0
+    },
+    "8" : {
+        "ct" : [],
+        "mxvd" : 0
+    },
+    "9" : {
+        "ct" : [],
+        "mxvd" : 0
+    },
+    "10" : {
+        "ct" : [],
+        "mxvd" : 0
+    },
+    "11" : {
+        "ct" : [],
+        "mxvd" : 0
+    },
+    "12" : {
+        "ct" : [],
+        "mxvd" : 0 
+    }
 }

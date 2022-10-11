@@ -24,6 +24,7 @@
     --green: rgb(0,255,0);
 
     --pardiv_opacity: 1;
+    --oparoad: 0;
 }
 
 * {
@@ -102,6 +103,13 @@ nav {
         text-align: center;
         position: relative;
         padding: 0px;
+        background-color: transparent;
+        color: white;
+    }
+
+    nav button:hover {
+        background-color: var(--btnclr);
+        color: black;
     }
 
     #nav1 .upleft {
@@ -137,9 +145,10 @@ nav {
 
 /* */
 .nav {
+    --offsetnavsz: calc((var(--navsz_sampl) - var(--navsz))/-2);
     overflow: hidden;
     display: grid;
-    background-color: var(--green);
+    background-repeat: no-repeat;
 }
 
 /* nav doc*/
@@ -153,13 +162,18 @@ nav {
                             [endcol];
     grid-column: navline;
     grid-row: 1 / endline;
+    background-image:   linear-gradient(rgba(255,255,255,var(--oparoad)),rgba(255,255,255,var(--oparoad))), 
+                        url('background/road\ \(1\).jpg');
+    background-position: var(--offsetnavsz) 0;
+    background-size: var(--navsz_sampl) auto;
+    background-repeat: repeat-y;
 }
 .transition_enable #nav1 {
-    transition: width 0.5s;
+    transition: width 0.5s, background-position 0.5s;
 }
 
     #nav1 button {
-        left: calc((var(--navsz_sampl) - var(--navsz))/-2);
+        left: var(--offsetnavsz);
         width: var(--navsz_sampl);
     }
     .transition_enable #nav1 button {
@@ -181,13 +195,19 @@ nav {
                             [endcol];
     grid-column: 1 / endline;
     grid-row: navline;
+    background: white;
+    background-image:   linear-gradient(rgba(255,255,255,var(--oparoad)),rgba(255,255,255,var(--oparoad))), 
+                        url('background/road-rotate\ \(3\).jpg');
+    background-position: 0 var(--offsetnavsz);
+    background-size: auto var(--navsz_sampl);
+    background-repeat: repeat-x;
 }
 .transition_enable #nav2 {
-    transition: height 0.5s;
+    transition: height 0.5s, background-position 0.5s;
 }
 
     #nav2 button {
-        top: calc((var(--navsz_sampl) - var(--navsz))/-2);
+        top: var(--offsetnavsz);
         height: var(--navsz_sampl);
     }
     .transition_enable #nav2 button {
@@ -200,8 +220,13 @@ nav {
 
 /* */
 .closenav {
-    background: radial-gradient(white 20%, var(--green));
+    background-image:   linear-gradient(rgba(255,255,255,var(--oparoad)),rgba(255,255,255,var(--oparoad))), 
+                        url('background/crossroad.jpg');
+    background-size: 100% 100%;
     border: none;
+}
+.closenav:hover {
+    background: radial-gradient(white 20%, var(--green));
 }
 
 /* */
@@ -324,14 +349,11 @@ p.sub.haskeynotes {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url('background.jpg');
-    background-blend-mode: luminosity;
-    background-color: var(--green);
+    background-image: url('background/background\ \(1\).jpg');
     background-repeat: no-repeat;
     background-size: auto 100vh;
     background-position:    calc(50% + 50vw*var(--xxi)) /* 50vw*var(--xxi) = (50vw - var(--wdh)/2)*/
                             calc(50% + 50vh*var(--yyi));
-    filter: blur(2.5px);
 }
 
 .background:nth-child(2) {
@@ -363,7 +385,7 @@ p.sub.haskeynotes {
 
 /* */
 .annoucement {
-    background-color: blue;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +394,6 @@ p.sub.haskeynotes {
 
     .annoucement p {
         text-align: center;
-        color: white;
         position: static;
         width: initial;
         height: initial;
@@ -383,9 +404,7 @@ p.sub.haskeynotes {
     border: none;
     background-color: var(--btnclr);
     box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.315);
-    background-image: url('background.jpg');
-    background-blend-mode: luminosity;
-    background-color: rgb(238, 238, 238);
+    background-image: url('background/background\ \(2\).jpg');
     background-repeat: no-repeat;
     background-size: auto 100vh;
     visibility: hidden;

@@ -344,6 +344,7 @@ async function opennav() {
         section.appendChild(pardiv);
   
         arr.push(div);
+        setp('--oparoad',`${i*0.5/sovid}`);
 
         await timeout(100);
     }
@@ -369,6 +370,7 @@ async function opennav() {
       pardiv.appendChild(div);
       section.appendChild(pardiv);
       arr.push(div);
+      setp('--oparoad',`0.2`);
       await timeout(100);
     }
     
@@ -453,6 +455,7 @@ async function opennav() {
             let t = e.currentTarget;
             if (`${currentvid}` !== t.id) {return;}
 
+            setp('--oparoad',`${+t.id*0.5/sovid}`);
             currentvid = t.id - 1;
             t.parentElement.remove();
             arr[t.id-1]?.classList.remove('black');

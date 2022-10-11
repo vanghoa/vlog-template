@@ -70,9 +70,9 @@ let urlarrtong = {};
 (async function setup_fetch() {
   let subdata = await (await fetch(`scripts/subtitle.json`)).json();
   for (let index in subdata) {
-    if (subdata[index].length == 0) {continue;}
-    subdata[index].unshift(`Keynotes of week ${index}.`);
-    subdata[index].push(`Thank you! That's it for week ${index}.`);
+    if (subdata[index].ct.length == 0) {continue;}
+    subdata[index].ct.unshift(`Keynotes of week ${index}.`);
+    subdata[index].ct.push(`Thank you! That's it for week ${index}.`);
   }
   
   for (let week_num=1; week_num<=12; week_num++) {
@@ -99,7 +99,7 @@ let urlarrtong = {};
 
     urlarrtong[week_num] = {
       urlarr,
-      subdata : subdata[week_num]
+      subdata : subdata[week_num].ct
     };
   }
   console.clear();
