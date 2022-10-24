@@ -1,19 +1,69 @@
 {
     "1" : {
-        "ct" : [],
-        "mxvd" : 16 
+        "ct" : [
+            "I’m working at Practice Theory, a design studio. They design brand identities, campaigns, publications, websites and environmental spaces for clients who value the communicative and discursive power of design." 
+            ,
+            "The design process is informed by research, contextual understanding and an acute awareness of cultural signifiers."
+            ,
+            "Creative Director -> Project Manager -> Designer/Freelancer/Remote -> Design Intern 8 people at 4B Lorong 32 Geylang Singapore 398267, sharing the space with Spatial Anatomy and studio Vanessa Ban. Their services: Visual communication -> Exhibition design -> Website design -> Spatial design."
+            ,
+            "Design Intern. Befriend another intern here, also from Lasalle"
+            ,
+            "Project Manager, she manages multiple projects and as well as arrange the timeline"
+            ,
+            "So far, my assignment is to devise animation direction, visual design for an art event in Singapore. Besides, I’m also tasked with a motion graphic for a brand identity logo"
+        ],
+        "mxvd" : 16,
+        "type" : "webm"
     },
     "2" : {
-        "ct" : [],
-        "mxvd" : 10 
+        "ct" : [
+            "This week, I continued my tiring and endless exporting and rendering video. Sometimes, I even had to work OT because of some bad time management. After the clients were all good with the animation, I went on to design the slides that will be shown during the day of the event."
+            ,
+            "As far as I can see, the timeline management of multiple projects at the same time is quite inconsistent and interdependent.. I learnt that the work of project managers/accounts, being a midman is really stressful. There are some days I was working OT and I still saw our project manager stay behind, in and out with the clients."
+            ,
+            "This week, I met with my internship manager to have a quick review on my performance. Even though she already knew I was kinda furious yesterday because I have to work OT (not because of my fault but as the clients demand). She keeps a professional, calm and a bit lifeless manner towards me, while persuading me that it was the nature of work."
+            ,
+            "I learn the way of self-reflection on my own work from Lasalle. Like each time I finish a task, I try to be critical and make any adjustment to improve it even more after each each review with Randy or my project manager."
+        ],
+        "mxvd" : 10,
+        "type" : "webm"
     },
     "3" : {
-        "ct" : [],
-        "mxvd" : 17 
+        "ct" : [
+            "This week has lots of deadline but I used to work at an agency/studio environment before back in my gap year, so keeping up with the pace of work is not a big deal for me here except some of the first days on which I have to stay behind to export some animation (mostly actually waiting for it to finish rendering)."
+            ,
+            "The time it takes to render a final animation piece depends on a number of factors like hardware, project file management,... my current mood. Because obviously I cannot ask for better gears. All I can do is to tweak the export settings, tidy up the project file, and look up some rendering tricks on the internet. All that is to make the most out of pc and yes more time-saving."
+            ,
+            "Before, in my gap year, I worked as a designer under a creative director backgrounded in advertising and copywriting. The approach I work there is more or less different from here, in which I am working under a design director going to design school just like me. And I can see my other fellow designers are also influenced by this working style. This week I was briefed on a new project, unlike the first assignment. This one I work right from the early stage which is researching, sketching, ideation and stuff."
+            ,
+            "While I focus more on the concept, the message, meaning and how it makes sense of the themes towards audiences, others are more interested in the visual execution, throwing in a lot of graphic treatment references, what kind of visual impression the audience can get out of (still have concept but less)."
+            ,
+            "I realize this is some fun contrast not just because of the director’s background but also because of the visual culture gap between Vietnam and Singapore. While Singapore already familiarizes itself with the International design culture, or all the niche in the designer cool shit. Vietnamese audiences are still considering design as part of communication and marketing in general."
+            ,
+            "As said earlier, I have to do a lot of research this week for the new project. Therefore, the research experience I got from Lasalle when I did my essay for contextual study is really helpful to me now."
+        ],
+        "mxvd" : 17,
+        "type" : "webm/jpg",
+        "link" : [
+            [1,1,"jpg"],
+            [2,17,"webm"]
+        ]
     },
     "4" : {
-        "ct" : [],
-        "mxvd" : 12 
+        "ct" : [
+            "This week I continue the art event brief from last week's research. Got a quick review on the research and go on the design stage, visualizing the concepts and references."
+            ,
+            "So I had this chance on Thursday to go to the career fair of Grab, in which I got to know more about how it is like to work at Grab, about design strategy, UI/UX design process at Grab. It was quite nice and informative. Especially I got to know Grab even has a UX lab where they will invite testers to try their new products/services/adjustments/, get immediate feedback and repeat."
+            ,
+            "So because this week I have to take a leave to go to that event. I was really wondering whether I should tell the truth about the event to PT or make a false excuse because it’s kinda weird given that I’m doing an internship here and asking to go to a career fair of another company."
+            ,
+            "But after thinking it through, I choose honesty since I know this is currently a school internship, nothing is assured of my position so I have nothing to be afraid of. Besides, honesty is always better so PT can know more about my career path and myself as one of their employees."
+            ,
+            "Even though this week I focus mostly on the new project, I still had to spare some time to finish some animation assets/collateral from the design futures project. Because I was already familiar with all of this, I had no trouble at all and finished all of the assets much much faster compared to the first time. It was a smooth workflow from taking the brief and handling the FA file. I am rly grateful to gain a lot of motion graphic experience throughout this project. "
+        ],
+        "mxvd" : 12 ,
+        "type" : "webm"
     },
     "5" : {
         "ct" : [   
@@ -25,7 +75,12 @@
             ,
             "This week, nothing much happened around except for the fact that all the interns (including me) formed a gang to eat lunch in the pantry room everyday, since everyone else ate out."
         ],
-        "mxvd" : 9
+        "mxvd" : 9,
+        "type" : "webm/jpg",
+        "link" : [
+            [1,8,"webm"],
+            [9,9,"jpg"]
+        ]
     },
     "6" : {
         "ct" : [
@@ -39,7 +94,17 @@
             ,
             "Therefore, each assignment is kept track and measured by time units, which can be calculated to the overall productivity of one. However, to best take advantage of this scientific method, one has to take their time budget seriously and allocate workload efficiently."
         ],
-        "mxvd" : 0
+        "mxvd" : 0,
+        "type" : "webm/jpg",
+        "link" : [
+            [1,2,"jpg"],
+            [3,5,"webm"],
+            [6,6,"jpg"],
+            [7,8,"webm"],
+            [9,9,"jpg"],
+            [10,11,"webm"],
+            [12,12,"jpg"]
+        ]
     },
     "7" : {
         "ct" : [
@@ -49,23 +114,69 @@
             ,
             "Making anything into modules can greatly save efforts and time to do tasks that are repetitive and structural. I learned that every software has its own purpose, that is to make things faster and of higher precision by breaking down the workflow into small functions that can be reused, combined, and automated. Design software functions the same way and we should incorporate that thinking into how we work."
             ,
-            "Working amongst the machines nowadays, designers’ role is to instruct the softwares to design on our behalf or finding ways to exploit their computational capabilities so that we, creative person, can spend the rest of the day mediating, reflecting and wandering into the realm of ideas. I felt like the usage of dividing a big task into small segments can help us manage the task better."
+            "Working amongst the machines nowadays, designers’ role is to instruct the softwares to design on our behalf or finding ways to exploit their computational capabilities so that we, creative person, can spend the rest of the day mediating, reflecting and wandering into the realm of ideas. I felt like the usage of diwebming a big task into small segments can help us manage the task better."
             ,
             "As far as I can see, one of the weaknesses I observe at my workplace is the feeling of isolation. Even though I worked here for quite a short time, there’s still a distanced gap between me and other workers and I can also see that among those working here. Maybe it’s just because of my quite passive and introverted personality that I do not really talk much to others."
         ],
-        "mxvd" : 0
+        "mxvd" : 0,
+        "type" : "webm/jpg",
+        "link" : [
+            [1,1,"jpg"],
+            [2,13,"webm"]
+        ]
     },
     "8" : {
-        "ct" : [],
-        "mxvd" : 0
+        "ct" : [
+            "The internship almost ends, the experience so far of mine is PT creating a place for me to learn a lot of things on my own. I think a good workplace can empower employees’ self-learning ability rather than actively instruct them step by step. Yes I have learned quite a lot of great things ever since I came here. Also, I get to know more about the Singaporean design scene in general."
+            ,
+            "One unintentional benefit I got from this internship is that since because everyday it takes around 40 minutes to 1 hour for me to commute to PT by bus, I spend that much of time reading book, and for the past over 2 months, I finished 2 books already. Also, I learned to cook myself on a daily basis."
+            ,
+            "The 3 attributes I would associate myself with is honesty, tryhard and criticality."
+            ,
+            "Honesty is when I try to be as open as possible about anything during the internship from the leave reason to taking courage to comment on some designs or questioning back other coworkers. I think this can create a collaborative atmosphere built up on the foundation of trust. To me, trust is probably the most fundamental element for humans as social beings."
+            ,
+            "Tryhard is my utmost nature, I always push it to the limit, think of it and go for it. Even though I might hesitate a bit in the beginning, I will still insist on doing that. Tryhard is actually an addiction to being challenged, being in the position of inseccurity, running the risks of not doing it well, …. The ultimate goal of tryhard is not to succeed, but rather to embrace the hope that you can do everything. It can be undertood as a passion, also a chance to learn things on the go, things that you might not know you need until you have."
+            ,
+            "Criticality is the ability to analyze, think, look, and watch from different perspectives. It just helped me really much on breaking down each design, each decision made and letting others know what my opinion is or the reasons for my direction. It is also the skill of articulating your thoughts into words that have a much impact on how other people think; therefore, contributing and exchanging mutual values and know-hows"
+        ],
+        "mxvd" : 5,
+        "type" : "webm"
     },
     "9" : {
-        "ct" : [],
-        "mxvd" : 0
+        "ct" : [
+            "So this is approaching the end of the internship, I think that throughout this internship period, I have become a better worker, a more functional and flexible part of a collaborative workplace."
+            ,
+            "PT shows me that even the most fundamental knowledge such as Typography has to be practiced constantly to make your eyes sharper when looking at text. There is certainly other graphic design knowledge that needs to be practiced also, besides just exploring and experimenting new things!"
+            ,
+            "3 Main weaknesses:"
+            ,
+            "A sharp pair of eyes for spacing and typography: As said earlier, this is probably the most obvious weakness throughout the internship time. It should be due to me not practicing typesetting for a long time and busy with other visual making or maybe illustration. "
+            ,
+            "Social skills: As I have said before, the amount of convo between me and other coworkers is so little because of my limited ability to talk fluently. Of course, while working, I also tried as much to jump in the conversations but outside of that, saying ‘Hi’ or ‘Goodbye’ is 90% of my casual convo with other people."
+            ,
+            "Indesign skill: I also learned a lot to use indesign more advanced to optimize my workflow. Like there are some pre-made functions that can help automating all the repetitive work. Thanks to Ben for helping me figure these things out!"
+    ],
+        "mxvd" : 0,
+        "type" : "webm/jpg",
+        "link" : [
+            [1,1,"jpg"],
+            [2,7,"webm"]
+        ]
     },
     "10" : {
-        "ct" : [],
-        "mxvd" : 0
+        "ct" : [
+            " It’s the last week of this internship already. I think I have given some of my best in terms of dedication and new perspectives. PT has given me free space to do things I like and I’m happy that those things can help them in some way, not just for fun only (I hope so)."
+            ,
+            "Meanwhile, PT also taught me professional skill sets and useful practices when working in a studio that I wouldn’t even know on my own. Talking about making contacts, I made good friends with other interns and Randy, the creative director, mostly because of my good performance at PT."
+            ,
+            "This internship is like a place where I practice what I learned from the previous workplace in Vietnam, which is actually my first job. Here, I did not learn much more in terms of creative thinking or ideation since I have already accumulated that knowledge for myself from the previous gap year."
+            ,
+            "However, PT really brought me back to the way of a designer, how a designer differs from, say, an advertiser. PT brought me back to this world of visual making, crafting, layout, typeset, etc which I had almost left behind during the gap year to shift my full attention to concepts, meanings, ideas and rationales."
+            ,
+            "For the future possibilities, I am not sure about working in PT or any design studio in general since there are other fields and areas to explore in the design industry, which can add up to my experiences."
+        ],
+        "mxvd" : 10,
+        "type" : "webm"
     },
     "11" : {
         "ct" : [],

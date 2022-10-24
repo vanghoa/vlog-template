@@ -1,5 +1,10 @@
 "use strict"
 
+let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (isSafari) {
+  alert('If you are using Safari or browsing on IOS, the display may not work correctly!');
+}
+
 function button_arrange(btn,__,wh,g_static,g_change,limprefix) {
   let but = button[btn];
   let length = but.length;
@@ -319,7 +324,7 @@ async function opennav() {
         ////////////
         let core; 
         switch (urlitem.type) {
-          case 'vid':
+          case 'webm':
             core = $create('video');
             core.muted = true;
             core.loop = true;
@@ -333,13 +338,32 @@ async function opennav() {
               core.play();
             }
           break;
-          case 'img':
+          case 'jpg':
             core = $create('img');
             core.src = urlitem.url;
             core.alt = 'internship_image';
         }
-
-        div.appendChild(core);
+        ////////////
+        let xbutt = $create('div');
+            xbutt.classList.add('xbutton');
+            xbutt.title = 'close this item';
+            xbutt.onclick = ({ currentTarget : {parentElement : t}}) => {
+              if (`${currentvid}` !== t.id) {return;}
+  
+              setp('--oparoad',`${+t.id*0.5/sovid}`);
+              currentvid = t.id - 1;
+              t.parentElement.remove();
+              arr[t.id-1]?.classList.remove('black');
+  
+              try {
+                t.firstElementChild?.pause();
+              } catch(err) {}
+              try {
+                arr[t.id-1]?.firstElementChild.play();
+              } catch(err) {}
+            };
+        ////////////
+        div.append(core, xbutt);
         pardiv.appendChild(div);
         section.appendChild(pardiv);
   
@@ -451,22 +475,6 @@ async function opennav() {
             div.classList.remove('transition_wh');
           };
           div.id = i-1;
-          div.ondblclick = (e) => {
-            let t = e.currentTarget;
-            if (`${currentvid}` !== t.id) {return;}
-
-            setp('--oparoad',`${+t.id*0.5/sovid}`);
-            currentvid = t.id - 1;
-            t.parentElement.remove();
-            arr[t.id-1]?.classList.remove('black');
-
-            try {
-              t.firstElementChild?.pause();
-            } catch(err) {}
-            try {
-              arr[t.id-1]?.firstElementChild.play();
-            } catch(err) {}
-          };
 
       return div;
     }
@@ -484,7 +492,7 @@ async function opennav() {
   
   function navigate(t) {
     for (let btn of buttonall) {btn.disabled = true;}
-    week.innerText = t.innerText.substring(5);
+    week.innerText = t.getAttribute('page');
     wait();
   }
   

@@ -25,22 +25,22 @@
 <body>
     <nav>
         <div class="nav" id="nav2">
-            <button onclick="navigate(this);">Week 7</button>
-            <button onclick="navigate(this);">Week 8</button>
-            <button onclick="navigate(this);">Week 9</button>
-            <button onclick="navigate(this);">Week 10</button>
-            <button onclick="navigate(this);">Week 11</button>
-            <button onclick="navigate(this);">Week 12</button>
-            <button class="closenav" id="closenav2">Close</button>
+            <button onclick="navigate(this);" page="7"><span>Week 7</span></button>
+            <button onclick="navigate(this);" page="8"><span>Week 8</span></button>
+            <button onclick="navigate(this);" page="9"><span>Week 9</span></button>
+            <button onclick="navigate(this);" page="10"><span>Week 10</span></button>
+            <button onclick="navigate(this);" page="11"><span>Week 11</span></button>
+            <button onclick="navigate(this);" page="12"><span>Week 12</span></button>
+            <button class="closenav" id="closenav2"><span>Close</span></button>
         </div>
         <div class="nav" id="nav1">
-            <button onclick="navigate(this);">Week 1</button>
-            <button onclick="navigate(this);">Week 2</button>
-            <button onclick="navigate(this);">Week 3</button>
-            <button onclick="navigate(this);">Week 4</button>
-            <button onclick="navigate(this);">Week 5</button>
-            <button onclick="navigate(this);">Week 6</button>
-            <button class="closenav" id="closenav1" onclick="week_click();">Close</button>
+            <button onclick="navigate(this);" page="1"><span>Week 1</span></button>
+            <button onclick="navigate(this);" page="2"><span>Week 2</span></button>
+            <button onclick="navigate(this);" page="3"><span>Week 3</span></button>
+            <button onclick="navigate(this);" page="4"><span>Week 4</span></button>
+            <button onclick="navigate(this);" page="5"><span>Week 5</span></button>
+            <button onclick="navigate(this);" page="6"><span>Week 6</span></button>
+            <button class="closenav" id="closenav1" onclick="week_click();"><span>Close</span></button>
         </div>
         <div id="shadow1" class="shadow"></div>
         <div id="shadow2" class="shadow"></div>
@@ -68,7 +68,7 @@
                     box-shadow: inset 0px 0px 30px 45px rgb(255, 255, 255);
                     pointer-events: none;">
         </div>
-        <p class="week transition">Week <button id="week" onclick="week_click();">?</button>: Internship @ Practice Theory</p>
+        <p class="week transition">Week <button id="week" onclick="week_click();" title="pick a week!">?</button>: Internship @ Practice Theory</p>
         <div id="keynotes" class="transition">
             <button class="keynotes before" onclick="keynote_nav(false);">
                 Prev

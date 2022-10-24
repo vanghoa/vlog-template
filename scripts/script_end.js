@@ -69,12 +69,41 @@ let urlarrtong = {};
 
 (async function setup_fetch() {
   let subdata = await (await fetch(`scripts/subtitle.json`)).json();
-  for (let index in subdata) {
-    if (subdata[index].ct.length == 0) {continue;}
-    subdata[index].ct.unshift(`Keynotes of week ${index}.`);
-    subdata[index].ct.push(`Thank you! That's it for week ${index}.`);
+  let subdatalength = Object.keys(subdata).length;
+
+  for (let week_num=1; week_num<=subdatalength; week_num++) {
+    let urlarr = [];
+    let {ct, mxvd, type, link} = subdata[week_num];
+
+    if (ct.length > 0) {
+      ct.unshift(`Keynotes of week ${week_num}.`);
+      ct.push(`Thank you! That's it for week ${week_num}.`);
+    }
+
+    if (type == 'webm') {
+      for (let i=1; i<=mxvd; i++) {
+        urlarr.push({
+          url : `week ${week_num}/${nmspc} (${i}).webm`,
+          type : 'webm'
+        })
+      }
+    } else if (type == 'webm/jpg') {
+      for (let [last,end,type_] of link) {
+        for (let i = last; i<=end; i++) {
+          urlarr.push({
+            url : `week ${week_num}/${nmspc} (${i}).${type_}`,
+            type : type_
+          })
+        }
+      }
+    }
+
+    urlarrtong[week_num] = {
+      urlarr,
+      subdata : ct
+    };
   }
-  
+  /*
   for (let week_num=1; week_num<=12; week_num++) {
     let sovid = 1;
     let urlarr = [];
@@ -102,8 +131,11 @@ let urlarrtong = {};
       subdata : subdata[week_num].ct
     };
   }
-  console.clear();
+  */
+  //console.clear();
 })();
+
+
 setup_buttons();
 setup_petals();
 

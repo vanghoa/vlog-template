@@ -106,9 +106,16 @@ nav {
         background-color: transparent;
         color: white;
     }
+    nav button span {
+        background-color: black;
+        padding: 0 4px 0 4px;
+    }
 
     nav button:hover {
         background-color: var(--btnclr);
+    }
+    nav button:hover span {
+        background-color: var(--green);
         color: black;
     }
 
@@ -314,6 +321,7 @@ p.sub.haskeynotes {
     position: absolute;
     border-radius: 10px;
     pointer-events: auto;
+    overflow: visible;
     /* styling */
     box-shadow: 0px 0px 20px 5px #0000004e;
     transition: 0.5s filter linear;
@@ -404,7 +412,7 @@ p.sub.haskeynotes {
     border: none;
     background-color: var(--btnclr);
     box-shadow: inset 0px 0px 8px 1px rgba(0, 0, 0, 0.315);
-    background-image: url('background/background\ \(2\).jpg');
+    background-image: url('background/backgroundmrt.jpg');
     background-repeat: no-repeat;
     background-size: auto 100vh;
     visibility: hidden;
@@ -467,10 +475,29 @@ p.sub.haskeynotes {
     top: 20%;
 }
 */
+
+/* xbutton */
+.xbutton {
+    position: absolute;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+}
+
 /* media rule */
 
-@media (min-aspect-ratio: 2848/1672) {
-    .background, .petal {
+@media (min-aspect-ratio: 2000/954) {
+    .background {
+        background-size: 100vw;
+    }
+}
+
+@media (min-aspect-ratio: 2100/1441) {
+    .petal {
         background-size: 100vw;
     }
 }
