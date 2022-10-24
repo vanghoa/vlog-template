@@ -157,6 +157,9 @@ nav {
     display: grid;
     background-repeat: no-repeat;
 }
+button:hover {
+    cursor: pointer;
+}
 
 /* nav doc*/
 #nav1 {
@@ -274,6 +277,7 @@ p.week {
     top: 20px;
     left: 20px;
     color: blue;
+    font-weight: bold;
 }
 
 #keynotes {
