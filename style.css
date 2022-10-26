@@ -484,12 +484,27 @@ p.sub.haskeynotes {
 .xbutton {
     position: absolute;
     background-color: blue;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
     top: -25px;
     right: -25px;
     cursor: pointer;
+}
+.xbutton:before, .xbutton:after {
+  position: absolute;
+  left: 13px;
+  top: 3px;
+  content: ' ';
+  height: 25px;
+  width: 3px;
+  background-color: white;
+}
+.xbutton:before {
+  transform: rotate(45deg);
+}
+.xbutton:after {
+  transform: rotate(-45deg);
 }
 
 /* media rule */
