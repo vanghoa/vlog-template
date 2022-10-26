@@ -482,14 +482,17 @@ p.sub.haskeynotes {
 
 /* xbutton */
 .xbutton {
+    background-color: gray;
     position: absolute;
-    background-color: blue;
     width: 30px;
     height: 30px;
     border-radius: 15px;
     top: -25px;
     right: -25px;
     cursor: pointer;
+}
+.xbutton.active {
+    background-color: blue;
 }
 .xbutton:before, .xbutton:after {
   position: absolute;

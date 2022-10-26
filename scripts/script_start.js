@@ -295,7 +295,6 @@ async function opennav() {
   
     while (section.firstChild) {section.removeChild(section.lastChild);}
 
-    currentvid = sovid - 1;
     setp('--pardiv_opacity', 1/sovid);
   
     for (let i = 1; i <= sovid; i++) {
@@ -344,24 +343,7 @@ async function opennav() {
             core.alt = 'internship_image';
         }
         ////////////
-        let xbutt = $create('div');
-            xbutt.classList.add('xbutton');
-            xbutt.title = 'close this item';
-            xbutt.onclick = ({ currentTarget : {parentElement : t}}) => {
-              if (`${currentvid}` !== t.id) {return;}
-  
-              setp('--oparoad',`${+t.id*0.5/sovid}`);
-              currentvid = t.id - 1;
-              t.parentElement.remove();
-              arr[t.id-1]?.classList.remove('black');
-  
-              try {
-                t.firstElementChild?.pause();
-              } catch(err) {}
-              try {
-                arr[t.id-1]?.firstElementChild.play();
-              } catch(err) {}
-            };
+        let xbutt = xbutton_create();
         ////////////
         div.append(core, xbutt);
         pardiv.appendChild(div);
@@ -390,13 +372,17 @@ async function opennav() {
       let p = $create('p');
           p.textContent = `This week not have any recording (yet)`;
 
-      div.appendChild(p);
+      let xbutt = xbutton_create();
+      div.append(p,xbutt);
       pardiv.appendChild(div);
       section.appendChild(pardiv);
       arr.push(div);
       setp('--oparoad',`0.2`);
       await timeout(100);
     }
+
+    currentvid = sovid - 1;
+    arr[sovid-1].lastChild.classList.add('active');
     
     if (subdata.length == 0) {
       subdata = false;
@@ -417,6 +403,29 @@ async function opennav() {
     }
 
     week_click();
+
+    function xbutton_create() {
+      let xbutt = $create('div');
+          xbutt.classList.add('xbutton');
+          xbutt.title = 'close this item';
+          xbutt.onclick = ({ currentTarget : {parentElement : t}}) => {
+            if (`${currentvid}` !== t.id) {return;}
+
+            setp('--oparoad',`${+t.id*0.5/sovid}`);
+            currentvid = t.id - 1;
+            t.parentElement.remove();
+            arr[t.id-1]?.classList.remove('black');
+            arr[t.id-1]?.lastChild.classList.add('active');
+
+            try {
+              t.firstElementChild?.pause();
+            } catch(err) {}
+            try {
+              arr[t.id-1]?.firstElementChild.play();
+            } catch(err) {}
+          };
+      return xbutt;
+    }
 
     function pardiv_create(i) {
       let pardiv = $create('div');
