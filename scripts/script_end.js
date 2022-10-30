@@ -33,8 +33,8 @@ const navsz = +getp('--navsz_sampl').slice(0,-2);
 
 let width = innerWidth;
 let height = innerHeight;
-let xx;
-let yy;
+let xx = 1/2;
+let yy = 1/2;
 let limgrid = {};
 
 const background = [
@@ -54,7 +54,7 @@ for (let item of background) {
 const snap = 50;
 const nmspc = 'vid';
 
-let clicktimes = 0;
+let navisopen = false;
 const week = $('#week');
 
 let arr = [];
@@ -147,7 +147,7 @@ window.onresize = _.debounce(function() {
   setup_petals();
   button_arrange(1,+getp('--yy'),'vh','grid-column','grid-row','yy');
   button_arrange(2,+getp('--xx'),'vw','grid-row','grid-column','xx');
-  if (clicktimes%2==0) {return;}
+  if (!navisopen) {return;}
   grow_petals(false);
 }, 1000);
 

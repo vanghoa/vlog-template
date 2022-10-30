@@ -5,6 +5,13 @@ if (isSafari) {
   alert('If you are using Safari or browsing on IOS, the display may not work correctly!');
 }
 
+window.onload = function() {
+  let hash = +location.hash.substring(1);
+  if ((hash >= 1) && (hash <= buttonfull.length)) {
+    navigate(buttonfull[hash - 1]);
+  }
+}
+
 function button_arrange(btn,__,wh,g_static,g_change,limprefix) {
   let but = button[btn];
   let length = but.length;
@@ -112,7 +119,7 @@ async function grow_petals(wait) {
     else {clone_remap({target : clone});}
   }
 
-  for (let btn of buttonall) {btn.disabled = false;}
+  buttonall_disabled(false);
 
   function clone_remap(e) {
     let clone = e.target;
@@ -153,7 +160,7 @@ async function dispose_petals() {
     await timeout(100);
     clone.classList.remove('p0','p1','p2','p3','visibility');
   }
-  for (let btn of buttonall) {btn.disabled = false;}
+  buttonall_disabled(false);
 }
 
 async function opennav() {
@@ -212,7 +219,7 @@ async function opennav() {
   }
   
   function closenav() {
-    dispose_petals() 
+    dispose_petals();
     root.classList.remove('open');
 
     let d = -navsz/2;
@@ -408,7 +415,8 @@ async function opennav() {
       sub.classList.add('haskeynotes');
     }
 
-    week_click();
+    if (navisopen) {week_click();}
+    else {buttonall_disabled(false);}
 
     function xbutton_create() {
       let xbutt = $create('div');
@@ -504,19 +512,20 @@ async function opennav() {
   }
 
   function week_click() {
-    clicktimes++;
-    if (clicktimes%2==0) {
+    if (navisopen) {
       closenav();
     } else {
-      for (let btn of buttonall) {btn.disabled = true;}
+      buttonall_disabled(true);
       opennav();
     }
+    navisopen = !navisopen;
   }
   
   function navigate(t) {
-    for (let btn of buttonall) {btn.disabled = true;}
+    buttonall_disabled(true);
     week.innerText = t.getAttribute('page');
     wait();
+    location.hash = week.innerText;
   }
   
   function dragMoveListener (event) {
@@ -567,4 +576,8 @@ async function opennav() {
     let cur = so > (subdata.length - 1) ? 0 : so;
         cur = cur < 0 ? (subdata.length - 1) : cur;
     return cur;
+  }
+
+  function buttonall_disabled(a) {
+    for (let btn of buttonall) {btn.disabled = a;}
   }

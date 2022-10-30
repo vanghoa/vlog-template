@@ -19,7 +19,7 @@
     </script>
     -->
     <script src="scripts_min/lodash.custom.min.js"></script>
-    <script src="scripts_min/script_start.js"></script>
+    <script src="scripts/script_start.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 </head>
 <body>
@@ -68,7 +68,7 @@
                     box-shadow: inset 0px 0px 30px 45px rgb(255, 255, 255);
                     pointer-events: none;">
         </div>
-        <p class="week transition">Week <button id="week" onclick="week_click();" title="pick a week!">?</button>: Internship @ Practice Theory | Pick a week!</p>
+        <p class="week transition">Week <button id="week" onclick="week_click();" title="pick a week!">?</button>: Internship @ Practice Theory | Pick a week! | <button id="homepage" onclick="location.href=location.origin + location.pathname;" title="Back to home page!">Home page</button></p>
         <div id="keynotes" class="transition">
             <button class="keynotes before" onclick="keynote_nav(false);">
                 Prev
@@ -80,6 +80,6 @@
         </div>
 
     </main>
-    <script src="scripts_min/script_end.js"></script>
+    <script src="scripts/script_end.js"></script>
 </body>
 </html>
