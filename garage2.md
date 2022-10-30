@@ -12,8 +12,10 @@ imagemin * --plugin.mozjpeg.progressive=true --plugin.mozjpeg.max=50 --plugin.mo
 
 cleancss -o style_min.css style.css
 
-terser script_start.js --compress --mangle --output script_start_min.js
+.{
+terser scripts/script_start.js --compress --mangle --output scripts_min/script_start.js
 
-terser script_end.js --compress --mangle --output script_end_min.js
+terser scripts/script_end.js --compress --mangle --output scripts_min/script_end.js
+}
 
 for %i in (*.MOV) do ffmpeg -i "%i" "%~ni.webm"

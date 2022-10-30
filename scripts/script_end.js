@@ -68,7 +68,7 @@ let urlarrtong = {};
 //////////////////////////////////////////////////////////////////////
 
 (async function setup_fetch() {
-  let subdata = await (await fetch(`scripts/subtitle.json`)).json();
+  let subdata = await (await fetch(`scripts_min/subtitle.json`)).json();
   let subdatalength = Object.keys(subdata).length;
 
   for (let week_num=1; week_num<=subdatalength; week_num++) {
@@ -87,7 +87,7 @@ let urlarrtong = {};
           type : 'webm'
         })
       }
-    } else if (type == 'webm/jpg') {
+    } else if (type == 'various') {
       for (let [last,end,type_] of link) {
         for (let i = last; i<=end; i++) {
           urlarr.push({
@@ -159,8 +159,8 @@ interact('.resize-drag')
     listeners: {
       move (event) {
         let t = event.target;
+        if (t.classList.contains('black') || t.resizable == false) {return;}
         let rect = event.rect;
-        if (t.classList.contains('black')) {return;}
 
         let x = t.transx;
         let y = t.transy;

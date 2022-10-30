@@ -189,14 +189,14 @@ async function opennav() {
       if ((left < xcen) && (left_ > xcen)) {
           item.classList.add('transition_wh');
           if (posx >= xcen) {dx = -dx;}
-          item.width+=d*2;
+          item.width+= item.resizable ? d*2 : 0;
           item.style.width = `${item.width}px`;
       }
       
       if ((top < ycen) && (top_ > ycen)) {
           item.classList.add('transition_wh');
           if (posy >= ycen) {dy = -dy;} 
-          item.height+=d*2;
+          item.height+= item.resizable ? d*2 : 0;
           item.style.height = `${item.height}px`;
       }
 
@@ -248,8 +248,7 @@ async function opennav() {
             szoff++;
         if (posx >= xcen) {dx += szoff;}
 
-        item.width-= szoff;
-        item.style.width = `${item.width}px`;
+        item.width-= item.resizable ? szoff : 0;//
       } else if ((left > xcenl) && (left_ < xcenr)) {
         dx = 0;
       }
@@ -266,12 +265,13 @@ async function opennav() {
             szoff++;
         if (posy >= ycen) {dy += szoff;}
 
-        item.height-= szoff;
-        item.style.height = `${item.height}px`;
+        item.height-= item.resizable ? szoff : 0;//
       } else if ((top > ycent) && (top_ < ycenb)) {
         dy = 0;
       }
-
+      // the transition start here
+      item.style.width = `${item.width}px`;
+      item.style.height = `${item.height}px`;
       item.classList.add('transition');
       translate(item,dx,dy);
     }
@@ -319,7 +319,7 @@ async function opennav() {
         }
   
         let pardiv = pardiv_create(i);
-        let div = div_create(i,xcheck,ycheck);
+        let div = div_create(i,xcheck,ycheck,urlitem.type);
         ////////////
         let core; 
         switch (urlitem.type) {
@@ -341,6 +341,12 @@ async function opennav() {
             core = $create('img');
             core.src = urlitem.url;
             core.alt = 'internship_image';
+          break;
+          case 'js':
+            ({ default : core } = await import(`../${urlitem.url}`));
+            core.play = () => {
+              core.src = core.src_;
+            }
         }
         ////////////
         let xbutt = xbutton_create();
@@ -433,26 +439,34 @@ async function opennav() {
       return pardiv;
     }
 
-    function div_create(i,xcheck,ycheck) {
+    function div_create(i,xcheck,ycheck,type = '') {
       let div = $create('div');
 
-          div.width = map(Math.random(),0,1,
-            snap*4,
-            (xcheck ? hw : (width-hw))*6/7
-          ); //u
-          div.height = map(Math.random(),0,1,
-            snap*4,
-            (ycheck ? hh : (height-hh))*6/7
-          ); //u
-
-          div.left = map(Math.random(),0,1,
-            (xcheck ? 0 : hw) - hn,
-            (xcheck ? hw : width) - div.width + hn
-          );
-          div.top = map(Math.random(),0,1,
-            (ycheck ? 0 : hh) - hn,
-            (ycheck ? hh : height) - div.height + hn
-          );
+          if (type == 'js') {
+            div.width = 300;
+            div.height = 241;
+            div.left = (width - div.width)/2;
+            div.top = (height - div.height)/2;
+            div.resizable = false;
+          } else {
+            div.resizable = true;
+            div.width = map(Math.random(),0,1,
+              snap*4,
+              (xcheck ? hw : (width-hw))*6/7
+            ); //u
+            div.height = map(Math.random(),0,1,
+              snap*4,
+              (ycheck ? hh : (height-hh))*6/7
+            ); //u
+            div.left = map(Math.random(),0,1,
+              (xcheck ? 0 : hw) - hn,
+              (xcheck ? hw : width) - div.width + hn
+            );
+            div.top = map(Math.random(),0,1,
+              (ycheck ? 0 : hh) - hn,
+              (ycheck ? hh : height) - div.height + hn
+            );
+          }
           ////////////
           div.left_ = function() {
             return this.left + this.width;

@@ -13,8 +13,13 @@
             ,
             "So far, my assignment is to devise animation direction, visual design for an art event in Singapore. Besides, I’m also tasked with a motion graphic for a brand identity logo"
         ],
-        "mxvd" : 16,
-        "type" : "webm"
+        "mxvd" : 17,
+        "type" : "various",
+        "link" : [
+            [1,5,"webm"],
+            [6,6,"js"],
+            [7,17,"webm"]
+        ]
     },
     "2" : {
         "ct" : [
@@ -44,7 +49,7 @@
             "As said earlier, I had to do a lot of research this week for the new project. Therefore, the research experience I got from Lasalle when I did my essay for contextual study is really helpful to me now."
         ],
         "mxvd" : 17,
-        "type" : "webm/jpg",
+        "type" : "various",
         "link" : [
             [1,1,"jpg"],
             [2,17,"webm"]
@@ -76,7 +81,7 @@
             "This week, nothing much happened around except for the fact that all the interns (including me) formed a gang to eat lunch in the pantry room everyday, since everyone else ate out."
         ],
         "mxvd" : 9,
-        "type" : "webm/jpg",
+        "type" : "various",
         "link" : [
             [1,8,"webm"],
             [9,9,"jpg"]
@@ -95,7 +100,7 @@
             "Therefore, each assignment is kept track and measured by time units, which can be calculated to the overall productivity of one. However, to best take advantage of this scientific method, one has to take their time budget seriously and allocate workload efficiently."
         ],
         "mxvd" : 0,
-        "type" : "webm/jpg",
+        "type" : "various",
         "link" : [
             [1,2,"jpg"],
             [3,5,"webm"],
@@ -119,7 +124,7 @@
             "As far as I can see, one of the weaknesses I observe at my workplace is the feeling of isolation. Even though I worked here for quite a short time, there’s still a distanced gap between me and other workers and I can also see that among those working here. Maybe it’s just because of my quite passive and introverted personality that I do not really talk much to others."
         ],
         "mxvd" : 0,
-        "type" : "webm/jpg",
+        "type" : "various",
         "link" : [
             [1,1,"jpg"],
             [2,13,"webm"]
@@ -157,7 +162,7 @@
             "Indesign skill: I also learned a lot to use indesign more advanced to optimize my workflow. Like there are some pre-made functions that can help automating all the repetitive work. Thanks to Ben for helping me figure these things out!"
     ],
         "mxvd" : 0,
-        "type" : "webm/jpg",
+        "type" : "various",
         "link" : [
             [1,1,"jpg"],
             [2,7,"webm"]

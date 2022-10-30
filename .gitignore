@@ -6,6 +6,6 @@ package.json
 
 sort-naturally.ps1
 
-garage.ps1
+*.md
 
-garage2.md
+garage.ps1
