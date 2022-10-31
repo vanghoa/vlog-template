@@ -23,7 +23,6 @@ const kn_next= $('.keynotes.next');
       kn_before.disabled = true;
       kn_next.disabled = true;
 
-
 const buttonfull = [...$$('#nav1 [onclick="navigate(this);"]'), ...$$('#nav2 [onclick="navigate(this);"]')];
 const buttonall = $$('button:not(.keynotes)');
 const button = {1 : [],2 : []};
@@ -133,11 +132,15 @@ let urlarrtong = {};
   }
   */
   //console.clear();
+
+  setup_buttons();
+  setup_petals();
+  
+  let hash = +location.hash.substring(1);
+  if ((hash >= 1) && (hash <= buttonfull.length)) {
+    navigate(buttonfull[hash - 1]);
+  }
 })();
-
-
-setup_buttons();
-setup_petals();
 
 window.onresize = _.debounce(function() {
   width = innerWidth;

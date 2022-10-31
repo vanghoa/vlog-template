@@ -5,13 +5,6 @@ if (isSafari) {
   alert('If you are using Safari or browsing on IOS, the display may not work correctly!');
 }
 
-window.onload = function() {
-  let hash = +location.hash.substring(1);
-  if ((hash >= 1) && (hash <= buttonfull.length)) {
-    navigate(buttonfull[hash - 1]);
-  }
-}
-
 function button_arrange(btn,__,wh,g_static,g_change,limprefix) {
   let but = button[btn];
   let length = but.length;
