@@ -19,3 +19,13 @@ terser scripts/script_end.js --compress --mangle --output scripts_min/script_end
 }
 
 for %i in (*.MOV) do ffmpeg -i "%i" "%~ni.webm"
+//////////////////////////////
+. {
+    magick *.heic -quality 100% *.jpg
+}
+
+.{
+    Get-ChildItem | ForEach-Object {
+        magick $_ -quality 100% "$($_.Basename).jpg"
+    }
+}

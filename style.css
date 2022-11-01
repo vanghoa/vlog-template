@@ -309,6 +309,9 @@ p.sub {
 p.sub.haskeynotes {
     background-color: blue;
 }
+p.sub a {
+    color: inherit;
+}
 
 .pardiv {
     width: 100%;

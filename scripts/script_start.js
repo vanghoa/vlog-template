@@ -560,7 +560,13 @@ async function opennav() {
     } else {
       cur = check_cur(cur - 1);
     }
-    sub.textContent = `"${subdata[cur]}"`;
+        if (cur == subdata.length-1) {
+          let a = $create('a'); a.textContent = a.href = urlarrtong[week.innerText].vlog; a.target = '_blank';
+          sub.textContent = `"${subdata[cur]}`;
+          sub.append(a,'"');
+        } else {
+          sub.textContent = `"${subdata[cur]}"`;
+        }
     kn_before.textContent = `${check_cur(cur - 1) + 1}/${subdata.length}`;
     kn_next.textContent = `${check_cur(cur + 1) + 1}/${subdata.length}`;
     sub.current = cur;

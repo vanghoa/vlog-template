@@ -19,7 +19,8 @@
             [1,5,"webm"],
             [6,6,"js"],
             [7,17,"webm"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/CkESMTv4AAs"
     },
     "2" : {
         "ct" : [
@@ -32,7 +33,8 @@
             "I learn the way of self-reflection on my own work from Lasalle. Like each time I finish a task, I try to be critical and make any adjustment to improve it even more after each each review with Randy or my project manager."
         ],
         "mxvd" : 10,
-        "type" : "webm"
+        "type" : "webm",
+        "vlog" : "https://youtu.be/xwSgrD_M95c"
     },
     "3" : {
         "ct" : [
@@ -53,7 +55,8 @@
         "link" : [
             [1,1,"jpg"],
             [2,17,"webm"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/GsnPPhKIvJo"
     },
     "4" : {
         "ct" : [
@@ -68,7 +71,8 @@
             "Even though this week I focused mostly on the new project, I still had to spare some time to finish some animation assets/collateral from the previous project. Because I was already familiar with all of this, I had no trouble at all and finished all of the assets much much faster compared to the first time. It was a smooth workflow from taking the brief and handling the FA file. I am rly grateful to gain a lot of motion graphic experience throughout this project. "
         ],
         "mxvd" : 12 ,
-        "type" : "webm"
+        "type" : "webm",
+        "vlog" : "https://youtu.be/I9-adNw6-SI"
     },
     "5" : {
         "ct" : [   
@@ -85,7 +89,8 @@
         "link" : [
             [1,8,"webm"],
             [9,9,"jpg"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/DmxZu_vgRBE"
     },
     "6" : {
         "ct" : [
@@ -109,7 +114,8 @@
             [9,9,"jpg"],
             [10,11,"webm"],
             [12,12,"jpg"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/WZr20voODAI"
     },
     "7" : {
         "ct" : [
@@ -128,7 +134,8 @@
         "link" : [
             [1,1,"jpg"],
             [2,13,"webm"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/Ea32VlafepM"
     },
     "8" : {
         "ct" : [
@@ -145,7 +152,8 @@
             "Criticality is the ability to analyze, think, look, and watch from different perspectives. It just helped me really much on breaking down each design, each decision made and letting others know what my opinion is or the reasons for my direction. It is also the skill of articulating your thoughts into words that have a much impact on how other people think; therefore, contributing and exchanging mutual values and know-hows"
         ],
         "mxvd" : 5,
-        "type" : "webm"
+        "type" : "webm",
+        "vlog" : "https://youtu.be/zNSTaEQ8N-k"
     },
     "9" : {
         "ct" : [
@@ -166,7 +174,8 @@
         "link" : [
             [1,1,"jpg"],
             [2,7,"webm"]
-        ]
+        ],
+        "vlog" : "https://youtu.be/T1tH845Fbg0"
     },
     "10" : {
         "ct" : [
@@ -181,7 +190,8 @@
             "For the future possibilities, I am not sure about working in PT or any design studio in general since there are other fields and areas to explore in the design industry, which can add up to my experiences."
         ],
         "mxvd" : 10,
-        "type" : "webm"
+        "type" : "webm",
+        "vlog" : "https://youtu.be/i1tdyllsN9w"
     },
     "11" : {
         "ct" : [],

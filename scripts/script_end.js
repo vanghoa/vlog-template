@@ -72,11 +72,11 @@ let urlarrtong = {};
 
   for (let week_num=1; week_num<=subdatalength; week_num++) {
     let urlarr = [];
-    let {ct, mxvd, type, link} = subdata[week_num];
+    let {ct, mxvd, type, link, vlog} = subdata[week_num];
 
     if (ct.length > 0) {
       ct.unshift(`Keynotes of week ${week_num}.`);
-      ct.push(`Thank you! That's it for week ${week_num}.`);
+      ct.push(`Thank you! That's it for week ${week_num}.`, `See the actual vlog recorded: `);
     }
 
     if (type == 'webm') {
@@ -99,7 +99,8 @@ let urlarrtong = {};
 
     urlarrtong[week_num] = {
       urlarr,
-      subdata : ct
+      subdata : ct,
+      vlog
     };
   }
   /*
