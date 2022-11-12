@@ -396,14 +396,16 @@ async function opennav() {
       sub.classList.remove('haskeynotes');
       kn_before.disabled = true;
       kn_next.disabled = true;
-      kn_before.textContent = `Prev`;
-      kn_next.textContent = `Next`;
+        kn_before_[1].textContent = `Prev`;
+        kn_next_[1].textContent = `Next`;
+        kn_before_[0].innerText = kn_next_[0].innerText = '';
     } else {
       kn_before.disabled = false;
       kn_next.disabled = false;
-      kn_before.textContent = `${subdata.length}/${subdata.length}`;
-      kn_next.textContent = `2/${subdata.length}`;
-      sub.textContent = `"${subdata[0]}"`;
+        kn_before_[1].innerText = kn_next_[1].innerText = `/${subdata.length}`;
+        kn_before_[0].textContent = `${subdata.length}`;
+        kn_next_[0].textContent = '2';
+      sub.textContent = `1: "${subdata[0]}"`;
       sub.current = 0;
       sub.classList.add('haskeynotes');
     }
@@ -554,21 +556,19 @@ async function opennav() {
   }
 
   function keynote_nav(next) {
-    let cur = sub.current;
-    if (next) {
-      cur = check_cur(cur + 1);
+    let cur = next ? check_cur(sub.current + 1) : check_cur(sub.current - 1);
+
+    if (cur == subdata.length-1) {
+      let a = $create('a'); a.textContent = a.href = urlarrtong[week.innerText].vlog; a.target = '_blank';
+      sub.textContent = `${cur + 1}: "${subdata[cur]}`;
+      sub.append(a,'"');
     } else {
-      cur = check_cur(cur - 1);
+      sub.textContent = `${cur + 1}: "${subdata[cur]}"`;
     }
-        if (cur == subdata.length-1) {
-          let a = $create('a'); a.textContent = a.href = urlarrtong[week.innerText].vlog; a.target = '_blank';
-          sub.textContent = `"${subdata[cur]}`;
-          sub.append(a,'"');
-        } else {
-          sub.textContent = `"${subdata[cur]}"`;
-        }
-    kn_before.textContent = `${check_cur(cur - 1) + 1}/${subdata.length}`;
-    kn_next.textContent = `${check_cur(cur + 1) + 1}/${subdata.length}`;
+
+    //kn_before_[1].innerText = kn_next_[1].innerText  = `/${subdata.length}`;
+    kn_before_[0].textContent = `${check_cur(cur - 1) + 1}`;
+    kn_next_[0].textContent = `${check_cur(cur + 1) + 1}`;
     sub.current = cur;
   }
   function check_cur(so) {

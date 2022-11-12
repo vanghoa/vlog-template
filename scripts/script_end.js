@@ -22,6 +22,8 @@ const kn_before = $('.keynotes.before');
 const kn_next= $('.keynotes.next');
       kn_before.disabled = true;
       kn_next.disabled = true;
+const kn_before_ = [$('.keynotes.before b'), $('.keynotes.before span')];
+const kn_next_ = [$('.keynotes.next b'), $('.keynotes.next span')];
 
 const buttonfull = [...$$('#nav1 [onclick="navigate(this);"]'), ...$$('#nav2 [onclick="navigate(this);"]')];
 const buttonall = $$('button:not(.keynotes)');

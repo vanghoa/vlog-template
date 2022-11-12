@@ -68,14 +68,14 @@
                     box-shadow: inset 0px 0px 30px 45px rgb(255, 255, 255);
                     pointer-events: none;">
         </div>
-        <p class="week transition"><button id="portfolio" onclick="location.href='https://www.instagram.com/bao.anh.b/';" title="Go to my profile!"> My profile </button> | <button id="resetpg" onclick="location.href=location.origin + location.pathname;" title="Reset the page!">Reset</button> | Week <button id="week" onclick="week_click();" title="pick a week!">?</button>: Internship @ Practice Theory</p>
+        <p class="week transition"> Week <button id="week" onclick="week_click();" title="select a week!">?</button>: Internship @ Practice Theory | <button id="resetpg" onclick="location.href=location.origin + location.pathname;" title="Reset the page!">Reload</button></p>
         <div id="keynotes" class="transition">
-            <button class="keynotes before" onclick="keynote_nav(false);">
-                Prev
+            <button class="keynotes before" onclick="keynote_nav(false);" title="Previous keynote">
+                <b></b><span>Prev</span>
             </button>
             <p class="sub">keynotes</p>
-            <button class="keynotes next" onclick="keynote_nav(true);">
-                Next
+            <button class="keynotes next" onclick="keynote_nav(true);" title="Next keynote">
+                <b></b><span>Next</span>
             </button>
         </div>
 

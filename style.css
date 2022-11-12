@@ -280,6 +280,16 @@ p.week {
     font-weight: bold;
 }
 
+p.week button {
+    font-weight: bold;
+}
+
+p.week button, .keynotes {
+    border-radius: 18px;
+    padding: 10px;
+
+}
+
 #keynotes {
     position: fixed;
     bottom: 0;
@@ -296,7 +306,6 @@ p.week {
     min-width: 70px;
     flex-shrink: 0;
     height: fit-content;
-    padding: 10px;
 }
 
 p.sub {
