@@ -2,7 +2,7 @@
 
 let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 if (isSafari) {
-  alert('If you are using Safari or browsing on IOS, the display may not work correctly!');
+  alert('Hello ^^ If you are using Safari or browsing on IOS, the website may not display the videos and the layout correctly!');
 }
 
 function button_arrange(btn,__,wh,g_static,g_change,limprefix) {
