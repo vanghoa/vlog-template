@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="transition_enable">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internship vlog @ Practice Theory 2022</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!--
     <script>
         document.addEventListener("visibilitychange", function() {
@@ -21,65 +21,93 @@
     <script src="scripts_min/lodash.custom.min.js"></script>
     <script src="scripts_min/script_start.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="nav" id="nav2">
-            <button onclick="navigate(this);" page="7"><span>Week 7</span></button>
-            <button onclick="navigate(this);" page="8"><span>Week 8</span></button>
-            <button onclick="navigate(this);" page="9"><span>Week 9</span></button>
-            <button onclick="navigate(this);" page="10"><span>Week 10</span></button>
-            <button onclick="navigate(this);" page="11"><span>Week 11</span></button>
-            <button onclick="navigate(this);" page="12"><span>Week 12</span></button>
-            <button class="closenav" id="closenav2"><span>Close</span></button>
-        </div>
-        <div class="nav" id="nav1">
-            <button onclick="navigate(this);" page="1"><span>Week 1</span></button>
-            <button onclick="navigate(this);" page="2"><span>Week 2</span></button>
-            <button onclick="navigate(this);" page="3"><span>Week 3</span></button>
-            <button onclick="navigate(this);" page="4"><span>Week 4</span></button>
-            <button onclick="navigate(this);" page="5"><span>Week 5</span></button>
-            <button onclick="navigate(this);" page="6"><span>Week 6</span></button>
-            <button class="closenav" id="closenav1" onclick="week_click();"><span>Close</span></button>
-        </div>
-        <div id="shadow1" class="shadow"></div>
-        <div id="shadow2" class="shadow"></div>
-        <div id="shadow3" class="shadow"></div>
-        <div id="shadow4" class="shadow"></div>
-        <div class="marginline" id="marginlinetl"></div>
-        <div class="marginline" id="marginlinebr"></div>
+      <div class="nav" id="nav2">
+        <button onclick="navigate(this);" page="7"><span>Week 7</span></button>
+        <button onclick="navigate(this);" page="8"><span>Week 8</span></button>
+        <button onclick="navigate(this);" page="9"><span>Week 9</span></button>
+        <button onclick="navigate(this);" page="10">
+          <span>Week 10</span>
+        </button>
+        <button onclick="navigate(this);" page="11">
+          <span>Week 11</span>
+        </button>
+        <button onclick="navigate(this);" page="12">
+          <span>Week 12</span>
+        </button>
+        <button class="closenav" id="closenav2"><span>Close</span></button>
+      </div>
+      <div class="nav" id="nav1">
+        <button onclick="navigate(this);" page="1"><span>Week 1</span></button>
+        <button onclick="navigate(this);" page="2"><span>Week 2</span></button>
+        <button onclick="navigate(this);" page="3"><span>Week 3</span></button>
+        <button onclick="navigate(this);" page="4"><span>Week 4</span></button>
+        <button onclick="navigate(this);" page="5"><span>Week 5</span></button>
+        <button onclick="navigate(this);" page="6"><span>Week 6</span></button>
+        <button class="closenav" id="closenav1" onclick="week_click();">
+          <span>Close</span>
+        </button>
+      </div>
+      <div id="shadow1" class="shadow"></div>
+      <div id="shadow2" class="shadow"></div>
+      <div id="shadow3" class="shadow"></div>
+      <div id="shadow4" class="shadow"></div>
+      <div class="marginline" id="marginlinetl"></div>
+      <div class="marginline" id="marginlinebr"></div>
     </nav>
 
     <main>
-        <div class="background transition"></div>
-        <div class="background transition"></div>
-        <div class="background transition"></div>
-        <div class="background transition"></div>
-        <section style="position: relative;
-                        width: 100%;
-                        height: 100%;">
-
-        </section>
-        <div style="width: 100%; 
-                    height: 100%;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    box-shadow: inset 0px 0px 30px 45px rgb(255, 255, 255);
-                    pointer-events: none;">
-        </div>
-        <p class="week transition"> Week <button id="week" onclick="week_click();" title="select a week!">?</button>: Internship @ Practice Theory | <button id="resetpg" onclick="location.href=location.origin + location.pathname;" title="Reset the page!">Reload</button></p>
-        <div id="keynotes" class="transition">
-            <button class="keynotes before" onclick="keynote_nav(false);" title="Previous keynote">
-                <b></b><span>Prev</span>
-            </button>
-            <p class="sub">keynotes</p>
-            <button class="keynotes next" onclick="keynote_nav(true);" title="Next keynote">
-                <b></b><span>Next</span>
-            </button>
-        </div>
-
+      <div class="background transition"></div>
+      <div class="background transition"></div>
+      <div class="background transition"></div>
+      <div class="background transition"></div>
+      <section
+        style="position: relative; width: 100%; height: 100%; z-index: 0"
+      ></section>
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          box-shadow: inset 0px 0px 30px 45px rgb(255, 255, 255);
+          pointer-events: none;
+        "
+      ></div>
+      <p class="week transition">
+        Week
+        <button id="week" onclick="week_click();" title="select a week!">
+          ?</button
+        >: Internship @ Practice Theory |
+        <button
+          id="resetpg"
+          onclick="location.href=location.origin + location.pathname;"
+          title="Reset the page!"
+        >
+          Reload
+        </button>
+      </p>
+      <div id="keynotes" class="transition">
+        <button
+          class="keynotes before"
+          onclick="keynote_nav(false);"
+          title="Previous keynote"
+        >
+          <b></b><span>Prev</span>
+        </button>
+        <p class="sub">keynotes</p>
+        <button
+          class="keynotes next"
+          onclick="keynote_nav(true);"
+          title="Next keynote"
+        >
+          <b></b><span>Next</span>
+        </button>
+      </div>
     </main>
     <script src="scripts_min/script_end.js"></script>
-</body>
+  </body>
 </html>
